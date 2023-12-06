@@ -4,7 +4,6 @@
 #include <time.h>
 #include <stdio.h>
 #include <LittleFS.h>             //https://github.com/esp8266/Arduino/tree/master/libraries/LittleFS
-#include <MQUnifiedsensor.h>      //https://github.com/miguel5612/MQSensorsLib/tree/master
 /************* End Includes *************/
 
 /************* Define default values *************/
@@ -72,6 +71,7 @@ bool MQ_DETECTED = false;
 #define RatioMQ135CleanAir 3.6//RS / R0 = 3.6 ppm  
 //#define calibration_button 13 //Pin to calibrate your sensor
 #include <MQUnifiedsensor.h>      //https://github.com/miguel5612/MQSensorsLib/tree/master
+
 
 //Declare Sensor
 MQUnifiedsensor MQ135(BOARD, VOLTAGE_RESOLUTION, ADC_BIT_RESOLUTION, MQ_ANALOG_PIN, MQ_TYPE);
